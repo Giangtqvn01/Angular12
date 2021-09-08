@@ -2,9 +2,8 @@
 <div class="test">
   <h3>Đây lafcomponent home</h3>
 <p>Chào bạn {{name}}</p>
-  <input type="text" value="{{name}}"/>
-  <br>
-  <input type="text" [value]="name"/>
+  <input type="text" [(ngModel)]="name"/>
   <h2 *ngIf="age >18">Bạn quá già</h2>
   <h2 *ngIf="age <=18">Bạn quá trẻ</h2>
+   <button (click)="resetName()">Reset tên</button>
 </div>
