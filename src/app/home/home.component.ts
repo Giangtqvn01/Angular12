@@ -9,10 +9,13 @@ export class HomeComponent implements OnInit {
 
   public  name ='Huy nguyễn';
   public age = 15;
+  public traiCay =['Táo', "Cam"];
+  public traiCay2 =[{ten : 'Táo', gia:12 , haGia:false},{ten : 'Quýt', gia:-13,haGia:true}]
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    console.log(this.traiCay);
   }
 
   public resetName() : void{
