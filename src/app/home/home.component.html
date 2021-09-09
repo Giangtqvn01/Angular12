@@ -5,7 +5,7 @@
     <li>{{item}}</li>
   </div>
 
-  <table class="table">
+  <!-- <table class="table">
     <tr>
       <th>Thứ tụ</th>
       <th>Tên</th>
@@ -22,5 +22,14 @@
         <span>{{item.haGia | onSale}}</span>
       </td>
     </tr>
-  </table>
+  </table> -->
+  Tỉnh / Thành Phố:
+  <select id="cars" (change)="changeCity($event)">
+    <option *ngFor="let data of vietNamData" value="{{data.city}}">{{data.city}}</option>
+  </select>
+  <br/>
+  Quận/Huyện:
+  <select id="cars" (change)="changeCity($event)">
+    <option *ngFor="let data of district" value="{{data}}">{{data}}</option>
+  </select>
 </div>
