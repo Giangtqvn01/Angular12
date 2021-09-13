@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -10,6 +11,7 @@ import { OnSalePipe } from './on-sale.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HighLightDirective } from './Directives/high-light.directive';
 import { TemplateDrivenFromComponent } from './template-driven-from/template-driven-from.component';
+import { ReactiveFrommComponent } from './reactive-fromm/reactive-fromm.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { TemplateDrivenFromComponent } from './template-driven-from/template-dri
     OnSalePipe,
     PageNotFoundComponent,
     HighLightDirective,
-    TemplateDrivenFromComponent
+    TemplateDrivenFromComponent,
+    ReactiveFrommComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
